@@ -1,0 +1,41 @@
+
+
+
+<!-- Belajar Callback ( video ke-3 (Programmer Zaman Now) ) -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Set Timeout</title>
+    <script>
+        function callback() {
+            console.log("Hello World");
+        }
+
+        function buttonClick() {
+            // ==== Belajar setTimeout (setTimeout = memanggil hanya satu kali )
+
+            // setTimeout(function () {
+            //     callback();
+            // }, 5000);        // 5000 = 5 detik
+
+            // setTimeout(callback, 5000);      // Cara lain
+
+
+            // ==== Belajar setInterval (Interval = memanggil berulangkali )
+            setInterval(function () {
+                callback();
+            }, 5000);        // 5000 = 5 detik
+
+            console.log("Success Click Button");
+        }
+    </script>
+</head>
+<body>
+
+<button onclick="buttonClick()">Click Me</button>
+
+</body>
+</html>
